@@ -1,0 +1,8 @@
+version: '3'
+services:
+    can_you_see_3:
+        build: ./reverse/can-you-see-3
+        ports:
+            - "7011:9999"
+        tty: true
+        restart: always

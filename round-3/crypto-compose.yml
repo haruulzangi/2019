@@ -1,0 +1,7 @@
+version: '3'
+services:
+    can_you_see_1:
+        build: ./crypto/can-you-see-1
+        ports:
+            - "7001:80"
+        restart: always

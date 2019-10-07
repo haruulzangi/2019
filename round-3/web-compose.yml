@@ -1,0 +1,40 @@
+version: "3.2"
+services:
+  cell18_php:
+    build: ./web/cell18/php/
+    networks:
+      - cell18_backend
+    restart: always
+  cell18_apache:
+    build: './web/cell18/apache/'
+    depends_on:
+      - cell18_php
+      - cell18_mysql
+    networks:
+      - cell18_frontend
+      - cell18_backend
+    ports:
+      - "8021:80"
+    restart: always
+  cell18_mysql:
+    image: mysql:5.6.40
+    networks:
+      - cell18_backend
+    environment:
+      - MYSQL_ROOT_PASSWORD=s0mer@nd0mStr1ng
+    volumes:
+      - ./web/cell18/dump.sql:/docker-entrypoint-initdb.d/dump.sql
+    restart: always
+  api:
+    build: ./web/api/
+    ports:
+      - "8022:80"
+    restart: always
+  yoda:
+    build: ./web/master_yoda
+    ports:
+      - "8023:80"
+    restart: always
+networks:
+  cell18_frontend:
+  cell18_backend:

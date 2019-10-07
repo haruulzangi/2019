@@ -1,0 +1,34 @@
+body {
+    font-family: 'Roboto Mono', monospace;
+    color: #fafafa;
+    background-color: #fafafa;
+}
+
+h1, h2, h3 {
+    color: #5c6773;
+    margin-bottom: 0;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ff6a00;
+    margin: 1em 0;
+    padding: 0; 
+}
+
+.container {
+    margin: auto;
+    width: 42em;
+}
+
+.screen {
+    padding: 10px;
+    background-color: #5c6773;
+    border-radius: 5px;
+}
+
+.centered {
+    text-align: center;
+}

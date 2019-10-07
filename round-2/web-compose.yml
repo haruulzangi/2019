@@ -1,0 +1,7 @@
+version: '3'
+services:
+    api:
+        build: ./web/api/
+        ports:
+            - "8001:80"
+        restart: always

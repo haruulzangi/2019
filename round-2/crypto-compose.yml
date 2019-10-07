@@ -1,0 +1,7 @@
+version: '3'
+services:
+    legend_crypto:
+        build: ./crypto/legend_crypto/
+        ports:
+            - "8020:80"
+        restart: always

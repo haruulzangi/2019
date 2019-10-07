@@ -1,0 +1,8 @@
+version: '3'
+services:
+    weak_mac:
+        build: ./crypto/weak_mac/
+        tty: true
+        ports:
+            - "9010:9000"
+        restart: always

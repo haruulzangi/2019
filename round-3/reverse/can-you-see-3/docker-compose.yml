@@ -1,0 +1,11 @@
+version: '3'
+services:
+  can-you-see-3:
+    container_name: can-you-see-3
+    build: .
+    image: tegshee/can-you-see-3
+    ports:
+      - "8003:9999"
+    volumes:
+      - "./:/home"
+    tty: true

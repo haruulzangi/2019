@@ -1,0 +1,2 @@
+User-agent: *
+Disallow: /r0b0-0nly/

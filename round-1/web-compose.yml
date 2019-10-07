@@ -1,0 +1,18 @@
+version: '3'
+services:
+    xss:
+        build: ./web/XSS1/XSS
+        ports:
+            - "9001:80"
+        restart: always
+    xss-bot:
+        build: ./web/XSS1/XSS-bot
+        environment:
+            - BASE_HOST=xss
+        links:
+            - xss
+    warmup:
+        build: ./web/warmup
+        ports:
+            - "9000:80"
+        restart: always
