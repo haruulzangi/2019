@@ -7,8 +7,8 @@ Haruul-Zangi 2019 ROUND 2 Web challenge
 * Install composer
 * Install laravel
 * run composer install in project directory
-* Setup database
+* setup database
 * Edit .env suitable for your environment
 ## GOAL
-Your goal is to enumerate database (for your skill don't use sqlmap)
+Your goal is to make sqlinjection and enumerate database (For your skill don't use sqlmap)
 ## HAPPY HACKING
