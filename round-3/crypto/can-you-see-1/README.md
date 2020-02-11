@@ -5,4 +5,4 @@ Category: Crypto Points: # Solves: # Description:
 
 # Write-up
 
-- [khulegu](writeups/khulegu.ipynb)
+- [khulegu](writeups/can_you_see_me_1_khulegu.md.ipynb)
