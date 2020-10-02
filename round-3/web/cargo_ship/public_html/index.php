@@ -44,7 +44,7 @@ form {
 
 </style>
 </head>
-<body style="background-image:url(cargo.jpg); background-repeat: no-repeat;   background-attachment: fixed;   background-position: center; background-color: black;">
+<body style="background-image:url('cargo.jpg'); background-repeat: no-repeat;   background-attachment: fixed;   background-position: center; background-color: black;">
 
 
 
