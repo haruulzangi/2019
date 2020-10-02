@@ -22,7 +22,7 @@ if (isset($_COOKIE['PHPSESSID'])){
 
 <html>
 <head>
-  <title>Space Cargo</title>
+  <title>Сансарын карго</title>
 <style>
 form {
 	 position: absolute;
@@ -65,7 +65,7 @@ form {
 	    $path = $path .$cook.'/'. basename( $_FILES['uploaded_file']['name']);
 	    if( pathinfo($path)['extension']!='php' ){
                     if (file_exists($path)) {
-			  echo "Sorry, $path already exists.";
+			  echo "Уучлаарай, $path файл хуулагдсан байна..";
                     }else {
 
     		          if(move_uploaded_file($_FILES['uploaded_file']['tmp_name'], $path)) {
