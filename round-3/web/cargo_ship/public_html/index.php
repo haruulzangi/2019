@@ -75,10 +75,10 @@ form {
     		          }
                     }
             }else { 
-                    echo 'Error: you cant upload .php file!  try something different ;)';
+                    echo 'Алдаа: .php өргөтгөлтэй файл хуулж болохгүй!  өөр файл оруулна уу ;)';
                   }
   } else { 
-            echo 'Error: only JPEG files allowed';
+            echo 'Алдаа: зөвхөн JPEG өргөтгөл зөвшөөрнө.';
   }
 } 
 ?>
