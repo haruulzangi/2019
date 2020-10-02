@@ -69,9 +69,9 @@ form {
                     }else {
 
     		          if(move_uploaded_file($_FILES['uploaded_file']['tmp_name'], $path)) {
-      			           echo "You cargo has been uploaded to <b>".$path.'</b>';
+      			           echo "Таны файл  <b>".$path.'</b> зам дээр хуулагдлаа.';
     		          } else{
-        		           echo "There was an error uploading the file, please try again!";
+        		           echo "Файлыг хуулахад алдаа гарлаа, дахин оролдоно уу!";
     		          }
                     }
             }else { 
