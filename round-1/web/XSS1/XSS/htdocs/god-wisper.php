@@ -19,7 +19,7 @@ $dh = opendir('./wishes');
                             echo "\n";
                             echo "<td>".$content[1]."</td>";
                             echo "</tr>";
-							$fh = fopen("./wishes/$file", 'w+');
+							$fh = fopen("./wishes/$file", 'w+'); // for log only
 							fwrite($fh, "admin". "\n"." шалгасан.");
 							fclose($fh);
                         }
