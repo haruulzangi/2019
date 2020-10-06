@@ -22,7 +22,7 @@ if (isset($_COOKIE['PHPSESSID'])){
 
 <html>
 <head>
-  <title>Space Cargo</title>
+  <title>Сансарын карго</title>
 <style>
 form {
 	 position: absolute;
@@ -44,7 +44,7 @@ form {
 
 </style>
 </head>
-<body style="background-image:url(cargo.jpg); background-repeat: no-repeat;   background-attachment: fixed;   background-position: center; background-color: black;">
+<body style="background-image:url('cargo.jpg'); background-repeat: no-repeat;   background-attachment: fixed;   background-position: center; background-color: black;">
 
 
 
@@ -65,20 +65,20 @@ form {
 	    $path = $path .$cook.'/'. basename( $_FILES['uploaded_file']['name']);
 	    if( pathinfo($path)['extension']!='php' ){
                     if (file_exists($path)) {
-			  echo "Sorry, $path already exists.";
+			  echo "Уучлаарай, $path файл хуулагдсан байна..";
                     }else {
 
     		          if(move_uploaded_file($_FILES['uploaded_file']['tmp_name'], $path)) {
-      			           echo "You cargo has been uploaded to <b>".$path.'</b>';
+      			           echo "Таны файл  <b>".$path.'</b> зам дээр хуулагдлаа.';
     		          } else{
-        		           echo "There was an error uploading the file, please try again!";
+        		           echo "Файлыг хуулахад алдаа гарлаа, дахин оролдоно уу!";
     		          }
                     }
             }else { 
-                    echo 'Error: you cant upload .php file!  try something different ;)';
+                    echo 'Алдаа: .php өргөтгөлтэй файл хуулж болохгүй!  өөр файл оруулна уу ;)';
                   }
   } else { 
-            echo 'Error: only JPEG files allowed';
+            echo 'Алдаа: зөвхөн JPEG өргөтгөл зөвшөөрнө.';
   }
 } 
 ?>
